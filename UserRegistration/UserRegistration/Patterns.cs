@@ -9,13 +9,13 @@ namespace UserRegistration
 {
     public class Patterns
     {
-        public static string email = "^[a-zA-Z0-9]+([!@#$%^&*()_+.,][a-zA-Z0-9]+)*[@][a-zA-Z]{2,}[.][a-zA-Z]{2,3}([.][a-zA-Z]{2})?$";
+        public static string phonenumber = "^91([ ])?[6-9]{1}[0-9]{9}$";
         public void Validation(string sample)
         {
-            if (Regex.IsMatch(sample, email))
-                Console.WriteLine("Valid email address");
+            if (Regex.IsMatch(sample, phonenumber))
+                Console.WriteLine("Valid phone number");
             else
-                Console.WriteLine("Invalid email address");
+                Console.WriteLine("Invalid phone number");
         }
     }
 }
