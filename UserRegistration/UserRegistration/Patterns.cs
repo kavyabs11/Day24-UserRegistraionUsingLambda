@@ -9,13 +9,13 @@ namespace UserRegistration
 {
     public class Patterns
     {
-        public static string phonenumber = "^91([ ])?[6-9]{1}[0-9]{9}$";
+        public static string password = "[a-z]{8}";
         public void Validation(string sample)
         {
-            if (Regex.IsMatch(sample, phonenumber))
-                Console.WriteLine("Valid phone number");
+            if (Regex.IsMatch(sample, password))
+                Console.WriteLine("Valid password");
             else
-                Console.WriteLine("Invalid phone number");
+                Console.WriteLine("Invalid password");
         }
     }
 }
